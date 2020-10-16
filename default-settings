@@ -24,3 +24,5 @@ fi
 if [ ! -f /usr/bin/ssr-server ]; then
   sed -i '/server-config/d' /usr/lib/lua/luci/controller/shadowsocksr.lua
 fi
+
+exit 0
