@@ -1,0 +1,26 @@
+
+
+if [ ! -f /etc/config/placeholder ]; then
+
+	if [ $(uci get network.wan.ipv6) == 0 ]; then
+		uci set smartdns.@smartdns[0].ipv6_server='0'
+		uci commit smartdns
+
+			uci set dhcp.@dnsmasq[0].filter_aaaa='1'
+			uci commit dhcp
+	else
+		uci set smartdns.@smartdns[0].ipv6_server='1'
+		uci commit smartdns
+
+		uci set dhcp.@dnsmasq[0].filter_aaaa='0'
+		uci commit dhcp
+	fi
+
+fi  
+
+if [ -f /etc/config/jia ]; then
+  sed -i '/=\/tmp\/dnsmasq.ssr/d' /etc/init.d/shadowsocksr
+fi
+if [ ! -f /usr/bin/ssr-server ]; then
+  sed -i '/server-config/d' /usr/lib/lua/luci/controller/shadowsocksr.lua
+fi
