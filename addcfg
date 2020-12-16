@@ -143,8 +143,8 @@ CONFIG_PACKAGE_luci-app-vlmcsd=y
 #CONFIG_PACKAGE_luci-app-samba4=y
 #CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-nlbwmon=y
-CONFIG_PACKAGE_luci-app-accesscontrol=y
+#CONFIG_PACKAGE_luci-app-nlbwmon=y
+#CONFIG_PACKAGE_luci-app-accesscontrol=y
 
 # Theme
 CONFIG_PACKAGE_luci-theme-material=y
