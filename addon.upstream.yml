@@ -50,7 +50,7 @@ jobs:
     - name: Modify
       run: |
         curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/addon.sh > ./devices/common/addon.sh
-        curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/addcfg > ./devices/x86_64/.config
+        curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/addon > ./devices/x86_64/.config
         echo -e "ADD_SH=\"addon.sh\"" >> ./devices/common/settings.ini
         sed -i '11s/true/false/g' ./devices/common/settings.ini
         sed -i 's/"10.0.0.1"/"192.168.10.1"/g' ./devices/common/default-settings
