@@ -57,17 +57,13 @@ sed -i 's/IP\/MAC绑定/ARP绑定/g' feeds/custom/luci-app-arpbind/po/zh_Hans/ar
 sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' feeds/custom/luci-app-socat/po/zh_Hans/socat.po
 
 sed -i 's/BaiduPCS Web/百度网盘/g' feeds/custom/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
-sed -i 's/services/nas/g' feeds/custom/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 
-sed -i 's/qBittorrent/BT  下载/g' feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
-sed -i 's/services/nas/g' feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+#sed -i 's/qBittorrent/BT  下载/g' feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 
 sed -i 's/aMule设置/电驴下载/g' feeds/custom/luci-app-amule/po/zh_Hans/amule.po
 sed -i 's/网络存储/存储/g' feeds/custom/luci-app-amule/po/zh_Hans/amule.po
-sed -i 's/services/nas/g' feeds/custom/luci-app-amule/luasrc/controller/amule.lua
 
 sed -i 's/可道云/可道云盘/g' feeds/custom/luci-app-kodexplorer/po/zh_Hans/kodexplorer.po
-sed -i 's/services/nas/g' feeds/custom/luci-app-kodexplorer/luasrc/controller/kodexplorer.lua
 
 sed -i 's/88/89/g' feeds/custom/luci-app-autoreboot/luasrc/controller/autoreboot.lua
 
