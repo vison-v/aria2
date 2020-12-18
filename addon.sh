@@ -7,20 +7,18 @@
 ##############菜单整理美化#################
 ./scripts/feeds update -a
 #curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/base >> feeds/luci/modules/luci-base/po/zh-cn/base.po
-sed -i '526s/管理权/权限管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i 's/msgstr "启动项"/msgstr "启动管理"/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '3940s/挂载点/挂载路径/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '5081s/重启/立即重启/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i 's/msgstr "VPN"/msgstr "酷软"/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '8522s/软件包/软件管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Administration"/{n;s/管理权/权限管理/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Startup"/{n;s/启动项/启动管理/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Mount Points"/{n;s/挂载点/挂载路径/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Reboot"/{n;s/重启/立即重启/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "VPN"/{n;s/VPN/酷软/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 
-sed -i 's/msgstr "软件包"/msgstr "软件管理"/g' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
+sed -i '/msgid "Software"/{n;s/软件包/软件管理/g}' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
 
-sed -i '233s/miniDLNA/DLNA服务/g' feeds/luci/applications/luci-app-minidlna/po/zh_Hans/minidlna.po
+sed -i '/msgid "miniDLNA"/{n;s/miniDLNA/DLNA服务/g}' feeds/luci/applications/luci-app-minidlna/po/zh_Hans/minidlna.po
 
-sed -i '205s/终端/命令终端/g' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
-sed -i '/"title": "Terminal",/{n;s/"action": {/"order": 31,\n&/g}' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
-sed -i '5s/"action": {/        "action": {/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
+sed -i '/msgid "Terminal"/{n;s/终端/命令终端/g}' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
+sed -i '/"title": "Terminal",/a\		"order": 31,' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 
 sed -i '249s/uHTTPd/网页服务/g' feeds/luci/applications/luci-app-uhttpd/po/zh_Hans/uhttpd.po
