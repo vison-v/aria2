@@ -8,11 +8,11 @@
 ./scripts/feeds update -a
 #curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/base >> feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i '526s/管理权/权限管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '5998s/启动项/启动管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i 's/msgstr "启动项"/msgstr "启动管理"/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 sed -i '3940s/挂载点/挂载路径/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '5080s/重启/立即重启/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '7078s/VPN/酷软/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '8521s/软件包/软件管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '5081s/重启/立即重启/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i 's/msgstr "VPN"/msgstr "酷软"/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '8522s/软件包/软件管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 
 sed -i '261s/软件包/软件管理/g' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
 
