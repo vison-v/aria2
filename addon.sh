@@ -20,7 +20,7 @@ sed -i '233s/miniDLNA/DLNA服务/g' feeds/luci/applications/luci-app-minidlna/po
 
 sed -i '205s/终端/命令终端/g' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
 sed -i '/"title": "Terminal",/{n;s/"action": {/"order": 31,\n&/g}' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
-sed -i '5s/"action": {/                "action": {/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
+sed -i '5s/"action": {/        "action": {/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 
 sed -i '249s/uHTTPd/网页服务/g' feeds/luci/applications/luci-app-uhttpd/po/zh_Hans/uhttpd.po
