@@ -14,7 +14,7 @@ sed -i '5081s/重启/立即重启/g' feeds/luci/modules/luci-base/po/zh_Hans/bas
 sed -i 's/msgstr "VPN"/msgstr "酷软"/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 sed -i '8522s/软件包/软件管理/g' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 
-sed -i '261s/软件包/软件管理/g' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
+sed -i 's/msgstr "软件包"/msgstr "软件管理"/g' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
 
 sed -i '233s/miniDLNA/DLNA服务/g' feeds/luci/applications/luci-app-minidlna/po/zh_Hans/minidlna.po
 
