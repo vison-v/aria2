@@ -7,32 +7,32 @@
 ##############菜单整理美化#################
 ./scripts/feeds update -a
 #curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/base >> feeds/luci/modules/luci-base/po/zh-cn/base.po
-sed -i '/msgid "Administration"/{n;s/管理权/权限管理/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '/msgid "Startup"/{n;s/启动项/启动管理/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '/msgid "Mount Points"/{n;s/挂载点/挂载路径/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '/msgid "Reboot"/{n;s/重启/立即重启/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
-sed -i '/msgid "VPN"/{n;s/VPN/酷软/g}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Administration"/{n;s/管理权/权限管理/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Startup"/{n;s/启动项/启动管理/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Mount Points"/{n;s/挂载点/挂载路径/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "Reboot"/{n;s/重启/立即重启/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
+sed -i '/msgid "VPN"/{n;s/VPN/酷软/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 
-sed -i '/msgid "Software"/{n;s/软件包/软件管理/g}' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
+sed -i '/msgid "Software"/{n;s/软件包/软件管理/;}' feeds/luci/applications/luci-app-opkg/po/zh_Hans/opkg.po
 
-sed -i '/msgid "miniDLNA"/{n;s/miniDLNA/DLNA服务/g}' feeds/luci/applications/luci-app-minidlna/po/zh_Hans/minidlna.po
+sed -i '/msgid "miniDLNA"/{n;s/miniDLNA/DLNA服务/;}' feeds/luci/applications/luci-app-minidlna/po/zh_Hans/minidlna.po
 
-sed -i '/msgid "Terminal"/{n;s/终端/命令终端/g}' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
+sed -i '/msgid "Terminal"/{n;s/终端/命令终端/;}' feeds/luci/applications/luci-app-ttyd/po/zh_Hans/ttyd.po
 sed -i '/"title": "Terminal",/a\		"order": 31,' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 sed -i 's/services/system/g' feeds/luci/applications/luci-app-ttyd/root/usr/share/luci/menu.d/luci-app-ttyd.json
 
-sed -i '249s/uHTTPd/网页服务/g' feeds/luci/applications/luci-app-uhttpd/po/zh_Hans/uhttpd.po
+sed -i '/msgid "uHTTPd"/{n;s/uHTTPd/网页服务/;}' feeds/luci/applications/luci-app-uhttpd/po/zh_Hans/uhttpd.po
 
-sed -i '199s/UPnP/UPnP服务/g' feeds/luci/applications/luci-app-upnp/po/zh_Hans/upnp.po
+sed -i '/msgid "UPnP"/{n;s/UPnP/UPnP服务/;}' feeds/luci/applications/luci-app-upnp/po/zh_Hans/upnp.po
 
 sed -i 's/带宽监控/监控/g' feeds/luci/applications/luci-app-nlbwmon/po/zh_Hans/nlbwmon.po
 
-sed -i '405s/Transmission/BtPt下载/g' feeds/luci/applications/luci-app-transmission/po/zh_Hans/transmission.po
+sed -i '/msgid "Transmission"/{n;s/Transmission/BtPt下载/;}' feeds/luci/applications/luci-app-transmission/po/zh_Hans/transmission.po
 
 sed -i 's/services/nas/g' feeds/luci/applications/luci-app-aria2/luasrc/controller/aria2.lua
 sed -i 's/services/nas/g' feeds/luci/applications/luci-app-aria2/luasrc/view/aria2/log_template.htm
 sed -i 's/services/nas/g' feeds/luci/applications/luci-app-aria2/luasrc/view/aria2/settings_header.htm
-sed -i '38s/Aria2/通用下载/g' feeds/luci/applications/luci-app-aria2/po/zh_Hans/aria2.po
+sed -i '/msgid "Aria2"/{n;s/Aria2/通用下载/;}' feeds/luci/applications/luci-app-aria2/po/zh_Hans/aria2.po
 
 sed -i '13s/KMS 服务器/KMS 服务/g' feeds/custom/luci-app-vlmcsd/po/zh_Hans/vlmcsd.po
 
