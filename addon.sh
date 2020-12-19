@@ -88,7 +88,7 @@ sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/controller/appfilt
 sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/view/admin_network/user_status.htm
 
 sed -i 's/network/control/g' feeds/custom/luci-app-eqos/luasrc/controller/eqos.lua
-sed -i '13s/IP限速/网速控制/g' feeds/custom/luci-app-eqos/po/zh_Hans/eqos.po
+sed -i '/msgid "EQoS"/{n;s/IP限速/网速控制/;}' feeds/custom/luci-app-eqos/po/zh_Hans/eqos.po
 
 sed -i 's/CPU 性能优化调节/CPU 调节/g' feeds/custom/luci-app-cpufreq/po/zh_Hans/cpufreq.po
 
