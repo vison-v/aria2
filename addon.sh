@@ -44,7 +44,7 @@ echo -e "\nmsgid \"Blacklist\"" >> feeds/custom/luci-app-control-webrestriction/
 echo -e "msgstr \"黑名单\"" >> feeds/custom/luci-app-control-webrestriction/po/zh_Hans/webrestriction.po
 
 #sed -i 's/44/43/g' feeds/custom/luci-app-usb-printer/luasrc/controller/usb_printer.lua
-sed -i 's/nas/services/g' feeds/customluci-app-usb-printer/luasrc/controller/usb_printer.lua
+sed -i 's/nas/services/g' feeds/custom/luci-app-usb-printer/luasrc/controller/usb_printer.lua
 sed -i 's/USB 打印服务器/打印服务/g' feeds/custom/luci-app-usb-printer/po/zh_Hans/usb-printer.po
 sed -i 's/网络存储/存储/g' feeds/custom/luci-app-usb-printer/po/zh_Hans/usb-printer.po
 sed -i 's/USB 打印服务器/打印服务/g' feeds/custom/luci-app-usb-printer/po/zh_Hans/luci-app-usb-printer.po
