@@ -57,6 +57,8 @@ sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' feeds/custom/luci-app-socat/po
 sed -i 's/BaiduPCS Web/百度网盘/g' feeds/custom/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 
 #sed -i 's/qBittorrent/BT  下载/g' feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+echo -e "\nmsgid \"qBittorrent\"" >> feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+echo -e "msgstr \"BT  下载\"" >> feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
 
 sed -i 's/aMule设置/电驴下载/g' feeds/custom/luci-app-amule/po/zh_Hans/amule.po
 sed -i 's/网络存储/存储/g' feeds/custom/luci-app-amule/po/zh_Hans/amule.po
