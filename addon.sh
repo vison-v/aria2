@@ -124,6 +124,7 @@ sed -i 's/services/vpn/g' feeds/custom/luci-app-jd-dailybonus/luasrc/view/jd-dai
 sed -i 's/京东签到服务/京东签到/g' feeds/custom/luci-app-jd-dailybonus/po/zh_Hans/jd-dailybonus.po
 
 sed -i 's/services/vpn/g' feeds/custom/luci-app-smartdns/root/usr/share/luci/menu.d/luci-app-smartdns.json
+sed -i '/"title": "SmartDNS",/a\		"order": 3,' feeds/custom/luci-app-smartdns/root/usr/share/luci/menu.d/luci-app-smartdns.json
 
 sed -i 's/services/vpn/g' feeds/custom/luci-app-koolproxyR/files/usr/lib/lua/luci/controller/koolproxy.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-koolproxyR/files/usr/lib/lua/luci/model/cbi/koolproxy/global.lua
