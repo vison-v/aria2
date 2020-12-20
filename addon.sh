@@ -1,8 +1,7 @@
 #!/bin/bash
 
 ##############加载自定义app################
-#mkdir my
-#svn co https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-accesscontrol my/luci-app-accesscontrol
+git clone https://github.com/KFERMercer/luci-app-tcpdump.git ./package/luci-app-tcpdump
 
 ##############菜单整理美化#################
 ./scripts/feeds update -a
@@ -82,7 +81,8 @@ sed -i 's/上网时间控制/时间控制/g' feeds/custom/luci-app-accesscontrol
 sed -i 's/services/control/g' feeds/custom/luci-app-accesscontrol/luasrc/controller/mia.lua
 sed -i 's/services/control/g' feeds/custom/luci-app-accesscontrol/luasrc/view/mia/mia_status.htm
 
-#sed -i 's/Tcpdump 流量监控/流量监控/g' feeds/custom/luci-app-tcpdump/po/zh_Hans/tcpdump.po
+mv package/luci-app-tcpdump/po/zh-cn package/luci-app-tcpdump/po/zh_Hans
+sed -i 's/Tcpdump 流量监控/流量监控/g' package/luci-app-tcpdump/po/zh_Hans/tcpdump.po
 
 sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/controller/appfilter.lua
 sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/view/admin_network/user_status.htm
