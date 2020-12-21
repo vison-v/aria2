@@ -82,7 +82,7 @@ sed -i 's/services/control/g' feeds/custom/luci-app-accesscontrol/luasrc/control
 sed -i 's/services/control/g' feeds/custom/luci-app-accesscontrol/luasrc/view/mia/mia_status.htm
 
 mv package/luci-app-tcpdump/po/zh-cn package/luci-app-tcpdump/po/zh_Hans
-sed -i 's/Tcpdump 流量监控/流量监控/g' package/luci-app-tcpdump/po/zh_Hans/tcpdump.po
+sed -i 's/Tcpdump 流量监控/流量捕获/g' package/luci-app-tcpdump/po/zh_Hans/tcpdump.po
 
 sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/controller/appfilter.lua
 sed -i 's/network/control/g' feeds/custom/luci-app-oaf/luasrc/view/admin_network/user_status.htm
