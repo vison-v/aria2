@@ -36,6 +36,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
     - name: Syn upstream
       run: |
+        rm -rf `find -maxdepth 1 -type d -name "[!.]*" ! -path "./diy"`
         git rm -r --cache *
        
         echo -e "\q" | svn co https://github.com/garypang13/Actions-OpenWrt/trunk/devices ./devices
@@ -51,7 +52,7 @@ jobs:
       run: |
         curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/addon.sh > ./devices/common/addon.sh
         curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/addon > ./devices/x86_64/.config
-        echo -e "ADD_SH=\"addon.sh\"" >> ./devices/common/settings.ini
+        sed -i '/DIY_SH="diy.sh"/a\ADD_SH="addon.sh"' ./devices/common/settings.ini
         sed -i '/CONFIG_PACKAGE_luci-app-gpsysupgrade=y/d' ./devices/common/.config
         sed -i '/WETRANSFER/s/true/false/' ./devices/common/settings.ini
         sed -i '/COWTRANSFER/s/true/false/' ./devices/common/settings.ini
