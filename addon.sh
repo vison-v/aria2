@@ -55,7 +55,8 @@ sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' feeds/custom/luci-app-socat/po
 
 sed -i 's/BaiduPCS Web/百度网盘/g' feeds/custom/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 
-#sed -i 's/qBittorrent/BT  下载/g' feeds/custom/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+sed -i 's/"ZeroTier"/"内网穿透"/g' feeds/custom/luci-app-zerotier/luasrc/controller/zerotier.lua
+
 echo -e "\nmsgid \"qBittorrent\"" >> feeds/custom/luci-app-qbittorrent/po/zh_Hans/qbittorrent.po
 echo -e "msgstr \"BT  下载\"" >> feeds/custom/luci-app-qbittorrent/po/zh_Hans/qbittorrent.po
 
@@ -171,6 +172,7 @@ sed -i 's/services/vpn/g' feeds/custom/luci-app-openclash/luasrc/view/openclash/
 sed -i 's/services/vpn/g' feeds/custom/luci-app-openclash/luasrc/view/openclash/switch_mode.htm
 sed -i 's/services/vpn/g' feeds/custom/luci-app-openclash/luasrc/view/openclash/update.htm
 
+sed -i 's/"ShadowSocksR Plus+"/"畅游国际"/g' feeds/custom/luci-app-ssr-plus/luasrc/controller/shadowsocksr.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/controller/shadowsocksr.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr/client-config.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/model/cbi/shadowsocksr/server-config.lua
@@ -183,8 +185,8 @@ sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/view/shadowsocks
 sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/view/shadowsocksr/status.htm
 sed -i 's/services/vpn/g' feeds/custom/luci-app-ssr-plus/luasrc/view/shadowsocksr/subscribe.htm
 sed -i 's/ShadowSocksR Plus+ 设置/SSR Plus设置/g' feeds/custom/luci-app-ssr-plus/po/zh_Hans/ssr-plus.po
-echo -e "\nmsgid \"ShadowSocksR Plus+\"" >> feeds/custom/luci-app-ssr-plus/po/zh_Hans/ssr-plus.po
-echo -e "msgstr \"SSR Plus\"" >> feeds/custom/luci-app-ssr-plus/po/zh_Hans/ssr-plus.po
+#echo -e "\nmsgid \"ShadowSocksR Plus+\"" >> feeds/custom/luci-app-ssr-plus/po/zh_Hans/ssr-plus.po
+#echo -e "msgstr \"SSR Plus\"" >> feeds/custom/luci-app-ssr-plus/po/zh_Hans/ssr-plus.po
 
 sed -i 's/services/vpn/g' feeds/custom/luci-app-serverchan/luasrc/controller/serverchan.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-serverchan/luasrc/model/cbi/serverchan/advanced.lua
