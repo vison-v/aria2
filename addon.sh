@@ -1,10 +1,21 @@
 #!/bin/bash
 
+##########################################
+rm -Rf feeds/custom/diy
+mv -f feeds/packages/libs/libx264 feeds/custom/libx264
+mv -f feeds/packages/net/aria2 feeds/custom/aria2
+mv -f feeds/packages/net/openvpn feeds/custom/openvpn
+mv -f feeds/packages/admin/netdata feeds/custom/netdata
+mv -f feeds/packages/net/shadowsocks-libev feeds/custom/shadowsocks-libev
+rm -Rf feeds/packages/net/{smartdns,frp,mwan3,miniupnpd} feeds/luci/applications/{luci-app-dockerman,luci-app-smartdns,luci-app-frpc}
+svn co https://github.com/project-openwrt/packages/trunk/lang/python/Flask-RESTful feeds/packages/lang/python/Flask-RESTful
+./scripts/feeds update luci packages custom
+
 ##############加载自定义app################
 git clone https://github.com/KFERMercer/luci-app-tcpdump.git ./package/luci-app-tcpdump
 
 ##############菜单整理美化#################
-./scripts/feeds update -a
+#./scripts/feeds update -a
 #curl -fsSL  https://raw.githubusercontent.com/vison-v/patches/main/base >> feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i '/msgid "Administration"/{n;s/管理权/权限管理/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
 sed -i '/msgid "Startup"/{n;s/启动项/启动管理/;}' feeds/luci/modules/luci-base/po/zh_Hans/base.po
