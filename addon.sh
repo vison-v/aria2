@@ -145,11 +145,11 @@ sed -i 's/services/vpn/g' feeds/custom/luci-app-adguardhome/luasrc/view/AdGuardH
 sed -i 's/services/vpn/g' feeds/custom/luci-app-adguardhome/luasrc/view/AdGuardHome/log.htm
 sed -i 's/services/vpn/g' feeds/custom/luci-app-adguardhome/luasrc/view/AdGuardHome/yamleditor.htm
 
-sed -i 's/Adblock Plus+/广告过滤/g' feeds/custom/luci-app-adblock-plus/luasrc/controller/adblock-plus.lua
-sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/controller/adblock-plus.lua
-sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/model/cbi/adblock-plus/base.lua
-sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/view/adblock-plus/adblock_status.htm
-sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/view/adblock-plus/refresh.htm
+#sed -i 's/Adblock Plus+/广告过滤/g' feeds/custom/luci-app-adblock-plus/luasrc/controller/adblock-plus.lua
+#sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/controller/adblock-plus.lua
+#sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/model/cbi/adblock-plus/base.lua
+#sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/view/adblock-plus/adblock_status.htm
+#sed -i 's/services/vpn/g' feeds/custom/luci-app-adblock-plus/luasrc/view/adblock-plus/refresh.htm
 
 sed -i 's/DNSFilter/广告过滤/g' feeds/custom/luci-app-dnsfilter/luasrc/controller/dnsfilter.lua
 sed -i 's/services/vpn/g' feeds/custom/luci-app-dnsfilter/luasrc/controller/dnsfilter.lua
