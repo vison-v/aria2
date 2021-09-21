@@ -33,6 +33,9 @@ msgstr "WAN-IP来源"
 msgid "Select WAN-IP Source"
 msgstr "选择WAN-IP来源"
 
+msgid "Network speed control service"
+msgstr "网速控制服务"
+
 msgid "Select the WAN-IP Source for AliDDNS, like wan/internet"
 msgstr "动态域名的IP来源，如wan/internet"
 
