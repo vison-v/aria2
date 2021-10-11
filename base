@@ -59,3 +59,6 @@ msgstr "域名检查间隔时间，单位分钟，范围1-59"
 
 msgid "Update Log"
 msgstr "更新记录"
+
+msgid "Koolddns"
+msgstr "动态 DNS"
